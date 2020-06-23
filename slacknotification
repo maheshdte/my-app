@@ -9,6 +9,5 @@ node{
     }
     
     stage('Slack Notification'){
-        slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#Friendsshare', message: 'Welcome to Slack', tokenCredentialId: 'a9020fee-3456-48fe-950e-070c4d07a6de', username: 'maheshdte'
-    }
+slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#jenkins-pipeline', color: 'good', message: 'Welcome to Slack', teamDomain: 'Friendsshare', tokenCredentialId: 'SlackNoti', username: 'maheshdte'    }
 }
